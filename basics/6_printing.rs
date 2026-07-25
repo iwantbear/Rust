@@ -52,17 +52,17 @@ fn main() {
 // Byte print = println!("{:b}") 바이트로 프린트 
 fn main() {
     let my_variable = &9;
-    println!("{:p}", my_variable);
+    println!("{:p}", my_variable);   // 결과 = 0x100446af0
 }
 
 fn main() {
     let my_variable2 = 9000;
-    println!("{:x}", my_variable2);
+    println!("{:x}", my_variable2);  // 결과 = 2328
 }
 
 fn main() {
     let my_variable3 = 4124;
-    println!("{:b}", my_variable3);
+    println!("{:b}", my_variable3);  // 결과 = 1000000011100
 }
 
 
