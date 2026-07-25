@@ -4,7 +4,7 @@
 fn main() {
     println!("Hello, world!");
     let first_letter = 'A';
-    let space = ' '; // A spcae instide ' ' is also a char
+    let space = ' '; // A spcae inside ' ' is also a char
     let other_language_char = 'Ꮔ'; // Thanks to Unicode, other languages like Cherokee display just fine too
     let cat_face = '😺'; // Emojis are chars too
 }
