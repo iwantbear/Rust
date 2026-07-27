@@ -116,3 +116,10 @@ fn main() {
     let mut my_country = "대한민국".to_string();
     add_is_great(my_country);
 }
+
+// 바로 위 두 코드의 차이점이 하나더 있는데 
+// 위 코드의 main 함수에서 add_is_great 함수 호출할때 &mut를 () 안에 넣었으면
+// 불러오는 함수의 String 앞에 붙이면됨
+
+// 밑의 코드처럼 main 함수에서 add_is_great 함수 호출할때 ()안에 아무것도 없으면
+// 불러오는 함수의 변수 앞에 mut 붙이면됨 
