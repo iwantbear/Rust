@@ -46,6 +46,22 @@ fn main() {
     println!("{:?}", &seasons[2..]);
     println!("{:?}", &seasons[..2]);
 }
+
+
+// array (vec도 마찬가지로 동작)에 담긴 값을 가져오고 싶을때 다음과 같이 하면 됨
+fn main() {
+    let my_array = ["a", "b", "c"];
+    let [a, b, c] = my_array;
+    println!("Item is a : {}", a);
+}
+
+// 위 코드처럼 사용하면 오류는 안나지만 b, c를 사용하지 않기에 경고가 뜸
+// 다음과 같이 하면 b, c를 무시할 수 있음
+fn main() {
+    let my_array = ["a", "b", "c"];
+    let [a, _, _] = my_array;
+    println!("Item is a : {}", a);
+}
 //------------------------------------------------------------------
 // Vec(vector)
 // array와 달리 수정가능한 값을 사용할때 사용함 즉, array와 차이점은 수정 가능 여부
